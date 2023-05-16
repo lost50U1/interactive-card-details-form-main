@@ -92,3 +92,59 @@ h6 {
 }
 
 /* main css */
+body {
+  font-size: var(--font-size);
+  font-family: var(--font);
+}
+
+/* container */
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* left column */
+
+.left {
+  flex: 1;
+  background-image: url("/images/bg-main-mobile.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--White);
+}
+
+.card {
+  width: 80%;
+  position: absolute;
+  top: 10vh;
+  left: 4vw;
+  z-index: 2;
+}
+
+.card2 {
+  width: 80%;
+  position: absolute;
+  top: 5vh;
+  right: 4vw;
+  z-index: 1;
+}
+
+/* right column */
+
+.right {
+  flex: 2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 4em 1.4em;
+  text-transform: uppercase;
+}
+
+/* hidden style for js  */
+.hidden {
+  display: none;
+}

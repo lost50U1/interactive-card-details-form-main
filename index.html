@@ -20,21 +20,19 @@
     <main>
       <div class="left">
         <div class="card">
-          <img src="/images/card-logo.svg" class="logo" alt="logo" />
           <img
             class="card-bg"
-            src="/images/bg-card-front.png"
+            src="images/bg-card-front.png"
             alt="background"
           />
-          <p class="credit-numbers">0000 0000 0000 0000</p>
-          <p class="text-flex">Jane Appleseed <span>00/00</span></p>
+          <div class="card-content">
+            <img src="images/card-logo.svg" class="logo" alt="logo" />
+            <p class="credit-numbers">0000 0000 0000 0000</p>
+            <p class="text-flex">Jane Appleseed <span>00/00</span></p>
+          </div>
         </div>
         <div class="card2">
-          <img
-            class="card-bg"
-            src="/images/bg-card-back.png"
-            alt="background"
-          />
+          <img class="card-bg" src="images/bg-card-back.png" alt="background" />
           <p class="card-text">000</p>
         </div>
       </div>
@@ -49,17 +47,24 @@
             placeholder="e.g. 1234 5678 9123 0000"
             maxlength="16"
           />
-          <label for="exp">Exp. Date (MM/YY)</label>
-          <input id="exp" type="text" placeholder="MM" maxlength="2" />
-          <input id="year" type="text" placeholder="YY" maxlength="2" />
-          <label for="cvc">CVC</label>
-          <input
-            id="cvc"
-            type="text"
-            minlength="1"
-            maxlength="3"
-            placeholder="e.g. 123"
-          />
+          <div class="flex">
+            <label for="exp">Exp. Date (MM/YY)</label
+            ><label for="cvc">CVC</label>
+          </div>
+
+          <div class="flex">
+            <input id="exp" type="text" placeholder="MM" maxlength="2" />
+            <input id="year" type="text" placeholder="YY" maxlength="2" />
+
+            <input
+              id="cvc"
+              type="text"
+              minlength="1"
+              maxlength="3"
+              placeholder="e.g. 123"
+            />
+          </div>
+
           <button type="submit">Confirm</button>
         </form>
       </div>
